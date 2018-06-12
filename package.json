@@ -1,0 +1,31 @@
+{
+  "name": "my_cli",
+  "version": "1.0.0",
+  "description": "我的命令行",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "index": "node index.js init",
+    "app": "node app.js m"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shoestrong/my_cli.git"
+  },
+  "author": "shoestrong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shoestrong/my_cli/issues"
+  },
+  "homepage": "https://github.com/Shoestrong/my_cli#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.15.1",
+    "download-git-repo": "^1.0.2",
+    "handlebars": "^4.0.11",
+    "inquirer": "^6.0.0",
+    "lodash": "^4.17.10",
+    "log-symbols": "^2.2.0",
+    "ora": "^2.1.0"
+  }
+}
