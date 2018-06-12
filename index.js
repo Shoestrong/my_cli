@@ -8,6 +8,7 @@ const inquirer = require('inquirer');
 const ora = require('ora');
 const chalk = require('chalk');
 const symbols = require('log-symbols');
+const validator = require('validator');
 
 program.version('1.0.0', '-v, --version')
     .command('init <name>')
@@ -51,7 +52,7 @@ program.version('1.0.0', '-v, --version')
             ]).then((answers) => {
                 const spinner = ora('正在下载模板...');
                 spinner.start();
-                download('http://xxxxxx:9999:HTML5/H5Template#master', name, {
+                download('github:github.com:Shoestrong/my_cli#dev', name, {
                     clone: true
                 }, (err) => {
                     if (err) {
